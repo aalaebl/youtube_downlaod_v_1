@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/eel.js"></script>
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/youtube-flat.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Loli Downloader</title>
+</head>
+
+<body>
+    <div id="Container">
+        <div id="userInput">
+            <div id="header">
+                <h1>Loli</h1>
+                <h3>Youtube to mp4 Downloader</h3>
+            </div>
+            <p id="help">Paste video page URL address & press GO to start, Oniii-Chan...</p>
+            <div id="wrapper">
+                <input type="text" id="input" placeholder="Insert link from YouTube & GO">
+                <button id="search-button" onclick="showData()">GO!</button>
+            </div>
+            <div id="data">
+                <div id="download-options">
+                    <label for="res">Choose the resolution:</label>
+                    <select id="res" name="res">
+                        <option value="1080p">1080p</option>
+                        <option value="720p">720p</option>
+                        <option value="480p">480p</option>
+                        <option value="360p">360p</option>
+                    </select>
+                    <button id="downlaod" onclick="downloadVideo()"> Download </button>
+                </div>
+                <div id="video-data">
+                    <div id="thumbnail">
+                        <img class="thumbnail" src="assets/220-2207608_kanna-png.png" alt="Loli">
+                    </div>
+
+                    <div id="info">
+                        <div id="video-title">
+                            <p>Title : <span id="title"> <br></span></p>
+                        </div>
+                        <div id="video-views">
+                            <p><br>Views : <span id="views"> </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <img id="Loli" src="assets/220-2207608_kanna-png.png" alt="Loli">
+    <footer>
+        <span>Copyright 2020 by Aalae Bl.<br>
+            Loli version 1.0</span>
+    </footer>
+</body>
+
+</html>
